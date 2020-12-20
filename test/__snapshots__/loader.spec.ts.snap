@@ -1,0 +1,150 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`loader loads files non-recursively 1`] = `
+Array [
+  Object {
+    "content": Object {
+      "data": "content",
+    },
+    "name": "root.json",
+    "path": "C:/sources/node/load-goblin/test/files",
+  },
+  Object {
+    "content": "data=content
+",
+    "name": "root.txt",
+    "path": "C:/sources/node/load-goblin/test/files",
+  },
+  Object {
+    "content": Object {
+      "data": "content",
+    },
+    "name": "root.yaml",
+    "path": "C:/sources/node/load-goblin/test/files",
+  },
+  Object {
+    "content": Object {
+      "data": "content",
+    },
+    "name": "root.yml",
+    "path": "C:/sources/node/load-goblin/test/files",
+  },
+]
+`;
+
+exports[`loader loads files recursively 1`] = `
+Array [
+  Object {
+    "content": Object {
+      "data": "content",
+    },
+    "name": "root.json",
+    "path": "C:/sources/node/load-goblin/test/files",
+  },
+  Object {
+    "content": "data=content
+",
+    "name": "root.txt",
+    "path": "C:/sources/node/load-goblin/test/files",
+  },
+  Object {
+    "content": Object {
+      "data": "content",
+    },
+    "name": "root.yaml",
+    "path": "C:/sources/node/load-goblin/test/files",
+  },
+  Object {
+    "content": Object {
+      "data": "content",
+    },
+    "name": "root.yml",
+    "path": "C:/sources/node/load-goblin/test/files",
+  },
+  Object {
+    "content": Object {
+      "data": "content",
+    },
+    "name": "abc.json",
+    "path": "C:/sources/node/load-goblin/test/files/abc",
+  },
+  Object {
+    "content": Object {
+      "data": "content",
+    },
+    "name": "abc1.json",
+    "path": "C:/sources/node/load-goblin/test/files/abc/abc1",
+  },
+  Object {
+    "content": Object {
+      "data": "content",
+    },
+    "name": "def.json",
+    "path": "C:/sources/node/load-goblin/test/files/def",
+  },
+  Object {
+    "content": Object {
+      "data": "content",
+    },
+    "name": "def1.json",
+    "path": "C:/sources/node/load-goblin/test/files/def/def1",
+  },
+]
+`;
+
+exports[`loader loads files recursively with function filter 1`] = `
+Array [
+  Object {
+    "content": Object {
+      "data": "content",
+    },
+    "name": "def.json",
+    "path": "C:/sources/node/load-goblin/test/files/def",
+  },
+  Object {
+    "content": Object {
+      "data": "content",
+    },
+    "name": "def1.json",
+    "path": "C:/sources/node/load-goblin/test/files/def/def1",
+  },
+]
+`;
+
+exports[`loader loads files recursively with text filter (ignores slash style) 1`] = `
+Array [
+  Object {
+    "content": Object {
+      "data": "content",
+    },
+    "name": "abc.json",
+    "path": "C:/sources/node/load-goblin/test/files/abc",
+  },
+  Object {
+    "content": Object {
+      "data": "content",
+    },
+    "name": "abc1.json",
+    "path": "C:/sources/node/load-goblin/test/files/abc/abc1",
+  },
+]
+`;
+
+exports[`loader loads files recursively with text filter 1`] = `
+Array [
+  Object {
+    "content": Object {
+      "data": "content",
+    },
+    "name": "abc.json",
+    "path": "C:/sources/node/load-goblin/test/files/abc",
+  },
+  Object {
+    "content": Object {
+      "data": "content",
+    },
+    "name": "abc1.json",
+    "path": "C:/sources/node/load-goblin/test/files/abc/abc1",
+  },
+]
+`;

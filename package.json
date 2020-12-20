@@ -1,0 +1,59 @@
+{
+  "name": "load-goblin",
+  "version": "1.0.0",
+  "description": "Mass loading of JSON and YAML files",
+  "maintainers": [
+    {
+      "name": "Igor Savin",
+      "email": "kibertoad@gmail.com"
+    }
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --config=jest.config.json",
+    "test:coverage": "jest --config=jest.config.json --coverage",
+    "test:ci": "npm run lint && npm run test:coverage",
+    "lint": "eslint --format codeframe \"lib/**/*.ts\" \"test/**/*.ts\"",
+    "prettier": "prettier --write \"{lib,test}/**/*.{js,ts}\" index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "js-yaml": "^3.14.1",
+    "matcher": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.19",
+    "@types/js-yaml": "^3.12.5",
+    "@types/node": "^14.14.14",
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.4.4",
+    "typescript": "4.1.3"
+  },
+  "homepage": "http://github.com/kibertoad/load-goblin",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kibertoad/load-goblin.git"
+  },
+  "keywords": [
+    "json",
+    "yml",
+    "yaml",
+    "load",
+    "loading",
+    "files",
+    "recursive"
+  ],
+  "files": [
+    "README.md",
+    "LICENSE",
+    "dist/*"
+  ]
+}
