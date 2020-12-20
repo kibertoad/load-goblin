@@ -1,4 +1,4 @@
-import { loadFiles, LoadingResult } from "../lib/loader";
+import { loadFiles, LoadingResult } from '../lib/loader'
 import { resolve } from 'path'
 
 describe('loader', () => {
@@ -9,7 +9,7 @@ describe('loader', () => {
   // Makes assertion work across platform
   function cutPathRoot(filesLoaded: LoadingResult) {
     filesLoaded.forEach((entry) => {
-      entry.path = entry.path.substring(entry.path.indexOf("/load-goblin/") + 1);
+      entry.path = entry.path.substring(entry.path.indexOf('/load-goblin/') + 1)
     })
     return filesLoaded
   }
