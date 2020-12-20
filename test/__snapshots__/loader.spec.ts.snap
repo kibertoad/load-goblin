@@ -7,27 +7,27 @@ Array [
       "data": "content",
     },
     "name": "root.json",
-    "path": "C:/sources/node/load-goblin/test/files",
+    "path": "load-goblin/test/files",
   },
   Object {
     "content": "data=content
 ",
     "name": "root.txt",
-    "path": "C:/sources/node/load-goblin/test/files",
+    "path": "load-goblin/test/files",
   },
   Object {
     "content": Object {
       "data": "content",
     },
     "name": "root.yaml",
-    "path": "C:/sources/node/load-goblin/test/files",
+    "path": "load-goblin/test/files",
   },
   Object {
     "content": Object {
       "data": "content",
     },
     "name": "root.yml",
-    "path": "C:/sources/node/load-goblin/test/files",
+    "path": "load-goblin/test/files",
   },
 ]
 `;
@@ -39,55 +39,55 @@ Array [
       "data": "content",
     },
     "name": "root.json",
-    "path": "C:/sources/node/load-goblin/test/files",
+    "path": "load-goblin/test/files",
   },
   Object {
     "content": "data=content
 ",
     "name": "root.txt",
-    "path": "C:/sources/node/load-goblin/test/files",
+    "path": "load-goblin/test/files",
   },
   Object {
     "content": Object {
       "data": "content",
     },
     "name": "root.yaml",
-    "path": "C:/sources/node/load-goblin/test/files",
+    "path": "load-goblin/test/files",
   },
   Object {
     "content": Object {
       "data": "content",
     },
     "name": "root.yml",
-    "path": "C:/sources/node/load-goblin/test/files",
+    "path": "load-goblin/test/files",
   },
   Object {
     "content": Object {
       "data": "content",
     },
     "name": "abc.json",
-    "path": "C:/sources/node/load-goblin/test/files/abc",
+    "path": "load-goblin/test/files/abc",
   },
   Object {
     "content": Object {
       "data": "content",
     },
     "name": "abc1.json",
-    "path": "C:/sources/node/load-goblin/test/files/abc/abc1",
+    "path": "load-goblin/test/files/abc/abc1",
   },
   Object {
     "content": Object {
       "data": "content",
     },
     "name": "def.json",
-    "path": "C:/sources/node/load-goblin/test/files/def",
+    "path": "load-goblin/test/files/def",
   },
   Object {
     "content": Object {
       "data": "content",
     },
     "name": "def1.json",
-    "path": "C:/sources/node/load-goblin/test/files/def/def1",
+    "path": "load-goblin/test/files/def/def1",
   },
 ]
 `;
@@ -99,14 +99,14 @@ Array [
       "data": "content",
     },
     "name": "def.json",
-    "path": "C:/sources/node/load-goblin/test/files/def",
+    "path": "load-goblin/test/files/def",
   },
   Object {
     "content": Object {
       "data": "content",
     },
     "name": "def1.json",
-    "path": "C:/sources/node/load-goblin/test/files/def/def1",
+    "path": "load-goblin/test/files/def/def1",
   },
 ]
 `;
@@ -118,14 +118,14 @@ Array [
       "data": "content",
     },
     "name": "abc.json",
-    "path": "C:/sources/node/load-goblin/test/files/abc",
+    "path": "load-goblin/test/files/abc",
   },
   Object {
     "content": Object {
       "data": "content",
     },
     "name": "abc1.json",
-    "path": "C:/sources/node/load-goblin/test/files/abc/abc1",
+    "path": "load-goblin/test/files/abc/abc1",
   },
 ]
 `;
@@ -137,14 +137,14 @@ Array [
       "data": "content",
     },
     "name": "abc.json",
-    "path": "C:/sources/node/load-goblin/test/files/abc",
+    "path": "load-goblin/test/files/abc",
   },
   Object {
     "content": Object {
       "data": "content",
     },
     "name": "abc1.json",
-    "path": "C:/sources/node/load-goblin/test/files/abc/abc1",
+    "path": "load-goblin/test/files/abc/abc1",
   },
 ]
 `;
