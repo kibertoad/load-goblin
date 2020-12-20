@@ -1,7 +1,7 @@
 {
   "name": "load-goblin",
-  "version": "1.0.0",
-  "description": "Mass loading of JSON and YAML files",
+  "version": "1.0.1",
+  "description": "Mass loading of files, supporting JSON and YAML parsing",
   "maintainers": [
     {
       "name": "Igor Savin",

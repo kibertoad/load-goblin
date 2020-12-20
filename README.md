@@ -1,9 +1,13 @@
 # load-goblin
-Mass loading of JSON and YAML files
+
+[![NPM Version][npm-image]][npm-url]
+[![Build Status](https://github.com/kibertoad/load-goblin/workflows/ci/badge.svg)](https://github.com/kibertoad/load-goblin/actions)
+
+Mass loading of files, supporting JSON and YAML parsing
 
 ## Getting started
 
-First install the package and awilix:
+First install the package:
 
 ```bash
 npm i load-goblin
@@ -43,3 +47,8 @@ Loader returns an array of entities, where each entry represents one file. Forma
 ```
 
 Note that JSON and YAML files are automatically parsed into objects. All other files are returned as text.
+
+[npm-image]: https://img.shields.io/npm/v/load-goblin.svg
+[npm-url]: https://npmjs.org/package/load-goblin
+[downloads-image]: https://img.shields.io/npm/dm/load-goblin.svg
+[downloads-url]: https://npmjs.org/package/load-goblin
