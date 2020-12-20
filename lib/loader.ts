@@ -1,7 +1,7 @@
 import { Dirent } from 'fs'
 import { isMatch } from 'matcher'
 
-import { readdir, readFile } from 'fs/promises'
+import { promises as fs } from 'fs'
 import { resolve } from 'path'
 import { safeLoad } from 'js-yaml'
 
@@ -20,7 +20,7 @@ export type LoadingResult = {
 }[]
 
 async function getFilesInDirectory(directory: string) {
-  const allEntries: Dirent[] = await readdir(directory, { withFileTypes: true })
+  const allEntries: Dirent[] = await fs.readdir(directory, { withFileTypes: true })
   const files: string[] = []
   const directories: string[] = []
 
@@ -44,7 +44,7 @@ async function loadContent(path: string): Promise<any> {
     return require(path)
   }
 
-  const fileContents = await readFile(path, 'utf8')
+  const fileContents = await fs.readFile(path, 'utf8')
   if (path.toLowerCase().endsWith('yml') || path.toLowerCase().endsWith('yaml')) {
     return safeLoad(fileContents)
   }
