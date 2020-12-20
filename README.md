@@ -20,7 +20,7 @@ import { resolve } from 'path'
 import { loadFiles } from 'load-goblin'
 
 function getPath(rootDir = '') {
-  return resolve(__dirname, 'files', rootDir)
+  return resolve(__dirname, rootDir)
 }
 
 const filesLoaded = await loadFiles({
@@ -31,8 +31,8 @@ const filesLoaded = await loadFiles({
 ```
 
 ## Supported config options
-`rootDirectory` - required parameter. Specifies full path for a directory from which loading will be initiated;
-`recursively` - optional parameter. If set to true, loading will include subdirectories;
+`rootDirectory` - required parameter. Specifies full path for a directory from which loading will be initiated;  
+`recursively` - optional parameter. If set to true, loading will include subdirectories;  
 `filter` - optional parameter. Can be either a simple text matching rule (supporting `*` for any amount of any symbols in the path), or a `(path: string) => boolean` matcher function.
 
 ## Output
