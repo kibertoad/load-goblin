@@ -9,19 +9,20 @@ describe('loader', () => {
   // Makes assertion work across platform
   function cutPathRoot(filesLoaded: LoadingResult) {
     filesLoaded.forEach((entry) => {
-      entry.path = entry.path.substring(entry.path.indexOf('/load-goblin/') + 1)
+      entry.path = entry.path.substring(entry.path.indexOf('/load-goblin/test/') + 1)
     })
-    return filesLoaded
   }
 
   it('loads files non-recursively', async () => {
     const filesLoaded = await loadFiles({ rootDirectory: getPath() })
-    expect(cutPathRoot(filesLoaded)).toMatchSnapshot()
+    cutPathRoot(filesLoaded)
+    expect(filesLoaded).toMatchSnapshot()
   })
 
   it('loads files recursively', async () => {
     const filesLoaded = await loadFiles({ rootDirectory: getPath(), recursively: true })
-    expect(cutPathRoot(filesLoaded)).toMatchSnapshot()
+    cutPathRoot(filesLoaded)
+    expect(filesLoaded).toMatchSnapshot()
   })
 
   it('loads files recursively with text filter', async () => {
@@ -30,7 +31,8 @@ describe('loader', () => {
       recursively: true,
       filter: '*/abc*.json',
     })
-    expect(cutPathRoot(filesLoaded)).toMatchSnapshot()
+    cutPathRoot(filesLoaded)
+    expect(filesLoaded).toMatchSnapshot()
   })
 
   it('loads files recursively with text filter (ignores slash style)', async () => {
@@ -39,7 +41,8 @@ describe('loader', () => {
       recursively: true,
       filter: '*\\abc*.json',
     })
-    expect(cutPathRoot(filesLoaded)).toMatchSnapshot()
+    cutPathRoot(filesLoaded)
+    expect(filesLoaded).toMatchSnapshot()
   })
 
   it('loads files recursively with function filter', async () => {
@@ -50,6 +53,7 @@ describe('loader', () => {
         return file.includes('def')
       },
     })
-    expect(cutPathRoot(filesLoaded)).toMatchSnapshot()
+    cutPathRoot(filesLoaded)
+    expect(filesLoaded).toMatchSnapshot()
   })
 })
