@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "js-yaml": "^3.14.1",
-    "matcher": "^3.0.0"
+    "matcher": "^4.0.0"
   },
   "devDependencies": {
     "@types/jest": "^26.0.19",
