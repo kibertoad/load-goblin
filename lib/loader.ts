@@ -3,7 +3,7 @@ import { isMatch } from 'matcher'
 
 import { promises as fs } from 'fs'
 import { resolve } from 'path'
-import { safeLoad } from 'js-yaml'
+import { load } from 'js-yaml'
 
 export type Filter = (file: string) => boolean
 
@@ -46,7 +46,7 @@ async function loadContent(path: string): Promise<any> {
 
   const fileContents = await fs.readFile(path, 'utf8')
   if (path.toLowerCase().endsWith('yml') || path.toLowerCase().endsWith('yaml')) {
-    return safeLoad(fileContents)
+    return load(fileContents)
   }
 
   return fileContents
